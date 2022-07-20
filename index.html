@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн редактор фотографий</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+  <!-- заголовок -->
+  <div class="container">
+    <h2>Редактор фото онлайн</h2>
+
+    <!-- редактор -->
+    <div class="wrapper">
+
+      <div class="editor-panel">
+        <!-- фильтры -->
+        <div class="filter">
+          <label class="title">Фильтры</label>
+          <div class="options">
+            <button class="active">Яркость</button>
+            <button>Насыщенность</button>
+            <button>Инверсия</button>
+            <button>Черно-белое</button>
+          </div>
+
+          <!-- панель редактирования -->
+          <div class="slider">
+            <div class="filter-info">
+              <p class="name">Редактировать</p>
+              <p class="value">100%</p>
+            </div>
+            <!-- ранг редактирования -->
+            <input type="range" value="100" min="0" max="200"/>
+          </div>
+
+        </div>
+        <!-- вращение изображение горизонтально вертикально и отражение -->
+        <div class="rotate">
+          <label class="title">Вращать & Отражать</label>
+          <div class="options">
+            <button><i class="fa-solid fa-rotate-left"></i></button>
+            <button><i class="fa-solid fa-rotate-right"></i></button>
+            <button><i class="bx bx-reflect-vertical"></i></button>
+            <button><i class="bx bx-reflect-horizontal"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- заглушка фото для загрузки -->
+      <div class="preview-img">
+        <img src="image-placeholder.svg" alt="preview-img">
+      </div>
+     </div>
+
+     <!-- сброс фильтров -->
+     <div class="controls">
+      <button class="reset-filter">Сброс фильтров</button>
+      <!-- загрузка изображения и сохранение -->
+      <div class="row">
+        <button class="choose-img">Загрузить</button>
+        <button class="save-img">Сохранить</button>
+      </div>
+     </div>
+  </div>
+
+  <!-- https://youtu.be/YqUUvBpCtfA?t=1117 -->
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
