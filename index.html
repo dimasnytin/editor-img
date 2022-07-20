@@ -22,10 +22,10 @@
         <div class="filter">
           <label class="title">Фильтры</label>
           <div class="options">
-            <button class="active">Яркость</button>
-            <button>Насыщенность</button>
-            <button>Инверсия</button>
-            <button>Черно-белое</button>
+            <button  id="brightness" class="active">Яркость</button>
+            <button id="saturation" >Насыщенность</button>
+            <button id="inversion" >Инверсия</button>
+            <button id="grayscale" >Черно-белое</button>
           </div>
 
           <!-- панель редактирования -->
@@ -61,13 +61,14 @@
       <button class="reset-filter">Сброс фильтров</button>
       <!-- загрузка изображения и сохранение -->
       <div class="row">
+        <input type="file" class="file-input" accept="image/*" hidden>
         <button class="choose-img">Загрузить</button>
         <button class="save-img">Сохранить</button>
       </div>
      </div>
   </div>
 
-  <!-- https://youtu.be/YqUUvBpCtfA?t=1117 -->
+  <!-- https://youtu.be/YqUUvBpCtfA?t=2095 -->
   
 
   
