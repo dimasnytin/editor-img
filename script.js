@@ -29,7 +29,7 @@ const loadImage = () =>{
   // передача URL-адреса файла в качестве предварительного просмотра img src
   previewImg.src = URL.createObjectURL(file); 
   previewImg.addEventListener("load",() => {
-    // resetFilterBtn.click();
+     resetFilterBtn.click();
     document.querySelector(".container").classList.remove("disable");
   });
 }
